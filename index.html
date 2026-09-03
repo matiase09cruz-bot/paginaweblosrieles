@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Rieles Inoxidable | Herramientas e Industria</title>
+    <!-- Etiquetas Meta de Seguridad -->
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Custom Font: Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #0d0d0d;
+            color: #ffffff;
+        }
+
+        .metallic-card {
+            background: linear-gradient(145deg, #1c1d21, #0f1012);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8),
+                        inset 0 1px 1px rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .metallic-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(220, 38, 38, 0.6);
+            box-shadow: 0 15px 35px rgba(220, 38, 38, 0.2),
+                        inset 0 1px 2px rgba(255, 255, 255, 0.25);
+        }
+
+        .icon-glow {
+            filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.2));
+            transition: filter 0.3s ease;
+        }
+
+        .metallic-card:hover .icon-glow {
+            filter: drop-shadow(0 0 12px rgba(239, 68, 68, 0.8));
+        }
+
+        .bg-grid {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between bg-grid relative overflow-x-hidden selection:bg-red-600 selection:text-white">
+
+    <!-- Glowing Background Elements -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-red-900/20 blur-[120px] pointer-events-none rounded-full"></div>
+    <div class="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[250px] bg-neutral-800/20 blur-[100px] pointer-events-none rounded-full"></div>
+
+    <!-- Header Section -->
+    <header class="w-full pt-10 pb-6 px-4 flex flex-col items-center justify-center relative z-10">
+        <div class="relative max-w-lg w-full px-4 flex justify-center">
+            <img 
+                src="logo.jpg" 
+                alt="Los Rieles Inoxidable Logo" 
+                class="w-full max-w-md h-auto rounded-xl shadow-2xl border border-neutral-800/80 object-contain drop-shadow-[0_0_20px_rgba(220,38,38,0.25)]" 
+                onerror="this.onerror=null; this.src='https://placehold.co/600x200/0d0d0d/ffffff?text=LOS+RIELES+INOXIDABLE';"
+            >
+        </div>
+
+        <p class="mt-6 text-neutral-400 font-medium text-sm sm:text-base tracking-widest uppercase text-center px-4">
+            Herramientas Industriales & Acero Inoxidable
+        </p>
+    </header>
+
+    <!-- Main Content Links -->
+    <main class="w-full max-w-4xl mx-auto px-4 py-6 flex-grow flex flex-col justify-center relative z-10">
+
+        <!-- Insignia de Seguridad y Verificación -->
+        <div class="flex items-center justify-center gap-2 mb-6 text-xs text-green-400/90 bg-green-950/40 border border-green-800/40 py-1.5 px-4 rounded-full w-fit mx-auto backdrop-blur">
+            <i data-lucide="shield-check" class="w-4 h-4 text-green-400"></i>
+            <span class="font-medium tracking-wide">Sitio Oficial Verificado • Conexión Segura SSL</span>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+
+            <!-- WhatsApp Link -->
+            <a href="https://w.app/oatvwx" target="_blank" rel="noopener noreferrer" 
+               class="metallic-card rounded-2xl p-6 flex flex-col items-center justify-center text-center group">
+                <div class="w-16 h-16 rounded-xl bg-neutral-800/80 border border-neutral-700/50 flex items-center justify-center mb-4 group-hover:bg-green-600/20 group-hover:border-green-500/50 transition-colors">
+                    <i data-lucide="message-circle" class="w-8 h-8 text-green-400 icon-glow"></i>
+                </div>
+                <span class="font-bold text-base sm:text-lg text-white group-hover:text-green-400 transition-colors">WhatsApp</span>
+                <span class="text-xs text-neutral-400 mt-1">Atención Inmediata</span>
+            </a>
+
+            <!-- Facebook Link -->
+            <a href="https://www.facebook.com/share/19QArJaPHD/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" 
+               class="metallic-card rounded-2xl p-6 flex flex-col items-center justify-center text-center group">
+                <div class="w-16 h-16 rounded-xl bg-neutral-800/80 border border-neutral-700/50 flex items-center justify-center mb-4 group-hover:bg-blue-600/20 group-hover:border-blue-500/50 transition-colors">
+                    <i data-lucide="facebook" class="w-8 h-8 text-blue-400 icon-glow"></i>
+                </div>
+                <span class="font-bold text-base sm:text-lg text-white group-hover:text-blue-400 transition-colors">Facebook</span>
+                <span class="text-xs text-neutral-400 mt-1">Página Oficial</span>
+            </a>
+
+            <!-- Instagram Link -->
+            <a href="https://www.instagram.com/heramientas_los_rieles?igsi=MWpucmNnZnkwbGM4eg==" target="_blank" rel="noopener noreferrer" 
+               class="metallic-card rounded-2xl p-6 flex flex-col items-center justify-center text-center group">
+                <div class="w-16 h-16 rounded-xl bg-neutral-800/80 border border-neutral-700/50 flex items-center justify-center mb-4 group-hover:bg-pink-600/20 group-hover:border-pink-500/50 transition-colors">
+                    <i data-lucide="instagram" class="w-8 h-8 text-pink-400 icon-glow"></i>
+                </div>
+                <span class="font-bold text-base sm:text-lg text-white group-hover:text-pink-400 transition-colors">Instagram</span>
+                <span class="text-xs text-neutral-400 mt-1">Catálogo y Novedades</span>
+            </a>
+
+            <!-- Google Maps Link -->
+            <a href="https://share.google/xxNHWJMBCsuMs5WbJ" target="_blank" rel="noopener noreferrer" 
+               class="metallic-card rounded-2xl p-6 flex flex-col items-center justify-center text-center group">
+                <div class="w-16 h-16 rounded-xl bg-neutral-800/80 border border-neutral-700/50 flex items-center justify-center mb-4 group-hover:bg-red-600/20 group-hover:border-red-500/50 transition-colors">
+                    <i data-lucide="map-pin" class="w-8 h-8 text-red-500 icon-glow"></i>
+                </div>
+                <span class="font-bold text-base sm:text-lg text-white group-hover:text-red-400 transition-colors">Ubicación</span>
+                <span class="text-xs text-neutral-400 mt-1">Cómo llegar</span>
+            </a>
+
+        </div>
+
+        <!-- Teléfono Directo -->
+        <div class="mt-8 flex justify-center">
+            <a href="tel:+528118126722" class="metallic-card rounded-xl py-3 px-8 flex items-center gap-3 text-neutral-300 hover:text-white group">
+                <i data-lucide="phone" class="w-5 h-5 text-red-500 group-hover:scale-110 transition-transform"></i>
+                <span class="font-semibold text-sm">Llamar: +81 1812 6722</span>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="w-full py-6 text-center text-xs text-neutral-500 border-t border-neutral-800/80 relative z-10 bg-neutral-950/80 backdrop-blur">
+        <div class="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+            <p>© <span id="year"></span> Los Rieles Inoxidable. Todos los derechos reservados.</p>
+            <p class="text-neutral-600 flex items-center justify-center gap-1">
+                <i data-lucide="lock" class="w-3 h-3 text-neutral-500"></i>
+                <span>Herramientas & Suministros Industriales</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
